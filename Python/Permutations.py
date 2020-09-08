@@ -3,7 +3,7 @@ def create_permutation(n):
         print(1)
         return
     if n == 2 or n == 3:
-        print("No Solution")
+        print("NO SOLUTION")
         return
     for i in range(2, n + 1, 2):
         print(i, end=' ')  # Print Even numbers first

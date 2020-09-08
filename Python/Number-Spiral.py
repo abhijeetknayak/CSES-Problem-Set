@@ -7,11 +7,15 @@ def get_value(X, Y):
     # diag(2, 2) = 3 + 2 * 2 (i = 1)
     diag = m * (m - 1) + 1
     if Y == m:  # The row value is the max value. Increment diagonal value with the difference (m - Y)
-        print(diag + (m - X))
+        if Y % 2 == 0:  # Even Y value. Decrease difference
+            print(diag - (m - X))
+        else:
+            print(diag + (m - X))
     else:  # The col value is the max value. Decrease difference (m - X) from the diagonal value
-        print(diag - (m - Y))
-
-
+        if X % 2 == 0:
+            print(diag + (m - Y))
+        else:
+            print(diag - (m - Y))
 
 if __name__ == '__main__':
     t = int(input())  # Number of tests

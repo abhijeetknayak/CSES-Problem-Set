@@ -1,6 +1,6 @@
 def find_trailing_zeros(number):
     count = 0
-    while number % 5 == 0:  # Divisible by 5
+    while number >= 5:  # Divisible by 5
         count += number // 5
         number = number // 5
     print(count)
