@@ -1,3 +1,5 @@
 if __name__ == '__main__':
     n = int(input())
-    print(2 ** n)
+    val = 2 ** n
+    result = val % 1000000007
+    print(result)

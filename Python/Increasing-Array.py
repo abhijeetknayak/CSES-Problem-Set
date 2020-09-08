@@ -14,6 +14,7 @@ if __name__ == '__main__':
     n = int(input())
     array = [int(x) for x in input().split()]
 
-    assert len(array) == n and len(array) > 1
-
-    create_increasing_array(array)
+    if len(array) == 1:
+        print(0)
+    else:
+        create_increasing_array(array)

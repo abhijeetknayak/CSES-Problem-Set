@@ -12,15 +12,15 @@ if __name__ == '__main__':
 
     assert len(num) == n - 1
 
-    # process_input(num, n)
+    process_input(num, n)
 
     # start_time = time.process_time()
-    for val in range(1, n + 1):
+    ''' for val in range(1, n + 1):
         try:
             num.remove(val)
         except:
             print(val)
-            break
+            break '''
     # print("Took {}s".format(time.process_time() - start_time))
 
 
