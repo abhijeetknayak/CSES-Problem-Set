@@ -21,4 +21,4 @@ if __name__ == '__main__':
 
     get_ways_knights(n)
 
-    get_ways_pawn(n)
+    # get_ways_pawn(n)

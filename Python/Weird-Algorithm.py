@@ -1,6 +1,7 @@
 import time
 
 def process_input(val):
+    print(val, end=' ')
     while val != 1:
         if val % 2 == 0:
             val = val // 2
